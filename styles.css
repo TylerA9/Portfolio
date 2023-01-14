@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
+    background-color:rgba(90, 90, 90, 0.744) ;
 }
 html{
     background-color: rgba(90, 90, 90, 0.744);  
@@ -279,12 +280,15 @@ justify-content: center;
   .profile{
     width: 500px;
     height: auto;
-    transform: translate(700px, 200px);
     align-items: center;
     background: cover;
     border: solid 2px black;
+    margin-left: 20%;
+    
   }
 
-  @media screen and(max-width:1200px) {
-    
+  .front-page{
+    display: flex;
+    width: 90%;
+
   }
