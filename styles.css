@@ -3,21 +3,14 @@
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
-    background-color:rgba(90, 90, 90, 0.744) ;
 }
-html{
-    background-color: rgba(90, 90, 90, 0.744);  
-}
-.body{
-    background-color: rgba(90, 90, 90, 0.744);
+body{
+    background-color: rgba(55, 55, 55, 0.744);
 }
 .start{
-    height: 100vh;
+    height:180px;
     width: 100%;
-    background-color: rgba(90, 90, 90, 0.744);
-    margin-bottom: 0;
-
-    
+    margin-bottom: 0; 
 }
 nav{
     display: flex;
@@ -77,8 +70,16 @@ nav ul li a:hover{
 
 .front-page{
     position: absolute;
+    width: 90%;
     top: 30%;
     left: 8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#front-page-text{
+    width: 45%;
+
 }
 
 h1{
@@ -143,12 +144,16 @@ margin-top: 100px;
 
 }
 
-.skills{
+.skill-container{
+    width: 90%;
     display: flex;
-    transform: translate(0, -600px);
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
-    overflow: hidden;
+
+}
+.skill{
+    width: 100px;
+    height: 120px;
 
 }
 
@@ -180,9 +185,8 @@ h5{
 
 
 .photo{
-        height: 300px;
-        width: 350px;
-        display: flex;
+        height: auto;
+        width: 100%;
         background-size: cover;
         margin: 5px;
         border: solid 2px gold;
@@ -190,25 +194,25 @@ h5{
 }
 
 .projects{
+    width: 90%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 60px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.picture1{
+    width: 45%;
+}
+.picture2{
+    width: 45%;
+}
 .img-txt{
-    width: 350px;
+    width: 100%;
     font-size: 20px;
     font-weight: bold;
     color: rgb(225,201,181 );
-}
-.picture1{
-    width: 400px;
-}
-
-.picture2{
-    margin-top: 63px;
 }
 
 .info{
@@ -227,15 +231,6 @@ justify-content: center;
 
 .contact-info{
     margin-top: 200px;
-}
-
-.container{
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-
-    width: 1000px;
 }
 
 .container p{
@@ -278,7 +273,7 @@ justify-content: center;
   }
 
   .profile{
-    width: 500px;
+    width: 50%;
     height: auto;
     align-items: center;
     background: cover;
@@ -287,13 +282,27 @@ justify-content: center;
     margin: auto
     
   }
-
-  .front-page{
-    display: flex;
+  @media screen and (max-width:900px){
+   .profile{
     width: 90%;
-
+    margin-left: -10px;
+   } 
+   #front-page-text{
+    width: 90%;
+   }
+   .picture1{
+    width: 90%;
+   }
+   .picture2{
+    width: 90%;
+   }
   }
+  @media screen and (max-width: 400px){
 
-  @media screen and (mad-width:1200px){
-    
+    .picture1{
+        width: 90%;
+    }
+    .picture2{
+        width: 90%;
+    }
   }
